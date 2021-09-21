@@ -1,0 +1,1060 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<style>
+
+body {
+    overflow-x: hidden;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Rubik:300,400,500,700,900');
+
+ * {
+     margin: 0;
+     padding: 0;
+     -webkit-font-smoothing: antialiased;
+     -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+     text-shadow: rgba(0, 0, 0, .01) 0 0 1px
+ }
+
+ body {
+     font-family: 'Rubik', sans-serif;
+     font-size: 14px;
+     font-weight: 400;
+     background: #eff6fa;
+     color: #000000
+ }
+
+ div {
+     display: block;
+     position: relative;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box
+ }
+.navbar-dark .navbar-brand {
+    color: #444;
+    background-color: #fff;
+    padding: 0px 50px;
+    font-size: 16px;
+}
+.play-action p {
+    font-size: 15px !important;
+    color: #fff;
+    line-height: 2em !important;;
+    display: inline-block;
+	padding-bottom: 20px;
+}
+ .bbb_viewed {
+     padding-top: 51px;
+     padding-bottom: 60px;
+     background: #eff6fa
+ }
+
+ .bbb_main_container {
+ 
+ }
+
+ .bbb_viewed_title_container {
+     border-bottom: solid 1px #dadada
+ }
+
+ .bbb_viewed_title {
+     margin-bottom: 16px;
+     margin-top: 8px
+ }
+
+ .bbb_viewed_nav_container {
+     position: absolute;
+     right: -5px;
+     bottom: 14px
+ }
+
+ .bbb_viewed_nav {
+     display: inline-block;
+     cursor: pointer
+ }
+
+ .bbb_viewed_nav i {
+     color: #07808d;
+     font-size: 16px;
+     padding: 5px;
+     -webkit-transition: all 200ms ease;
+     -moz-transition: all 200ms ease;
+     -ms-transition: all 200ms ease;
+     -o-transition: all 200ms ease;
+     transition: all 200ms ease
+ }
+
+ .bbb_viewed_nav:hover i {
+     color: #606264
+ }
+
+ .bbb_viewed_prev {
+     margin-right: 15px
+ }
+
+ .bbb_viewed_slider_container {
+     padding-top: 0px
+ }
+img.react-slide {
+    height: 70px;
+    width: 80% !important;
+    float: left;
+    margin-bottom: 20px;
+}
+.slider-text p {
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.4em;
+}
+ .bbb_viewed_item {
+     width: 100%;
+     background: #FFFFFF;
+     border-radius: 2px;
+     padding-top: 25px;
+     padding-bottom: 25px;
+     padding-left: 0px;
+     padding-right:10px
+ }
+
+ .bbb_viewed_image {
+     width: 150px;
+     height: 150px
+ }
+
+ .bbb_viewed_image img {
+     display: block;
+     max-width: 100%
+ }
+
+ .bbb_viewed_content {
+     width: 100%;
+     margin-top: 25px
+ }
+
+ .bbb_viewed_price {
+     font-size: 16px;
+     color: #000000;
+     font-weight: 500
+ }
+
+ .bbb_viewed_item.discount .bbb_viewed_price {
+     color: #df3b3b
+ }
+
+ .bbb_viewed_price span {
+     position: relative;
+     font-size: 12px;
+     font-weight: 400;
+     color: rgba(0, 0, 0, 0.6);
+     margin-left: 8px
+ }
+
+ .bbb_viewed_price span::after {
+     display: block;
+     position: absolute;
+     top: 6px;
+     left: -2px;
+     width: calc(100% + 4px);
+     height: 1px;
+     background: #8d8d8d;
+     content: ''
+ }
+
+ .bbb_viewed_name {
+     margin-top: 3px
+ }
+
+ .bbb_viewed_name a {
+     font-size: 14px;
+     color: #000000;
+     -webkit-transition: all 200ms ease;
+     -moz-transition: all 200ms ease;
+     -ms-transition: all 200ms ease;
+     -o-transition: all 200ms ease;
+     transition: all 200ms ease
+ }
+
+ .bbb_viewed_name a:hover {
+     color: #0e8ce4
+ }
+
+ .item_marks {
+     position: absolute;
+     top: 18px;
+     left: 18px
+ }
+
+ .item_mark {
+     display: none;
+     width: 36px;
+     height: 36px;
+     border-radius: 50%;
+     color: #FFFFFF;
+     font-size: 10px;
+     font-weight: 500;
+     line-height: 36px;
+     text-align: center
+ }
+
+ .item_discount {
+     background: #df3b3b;
+     margin-right: 5px
+ }
+
+ .item_new {
+     background: #0e8ce4
+ }
+
+ .bbb_viewed_item.discount .item_discount {
+     display: inline-block
+ }
+
+ .bbb_viewed_item.is_new .item_new {
+     display: inline-block
+ }
+
+.play-action {
+    margin-top: 40px;
+}
+
+.bg-dark {
+    background-color: #24346a !important;
+	padding-left: 9%;
+}
+nav.navbar.navbar-dark.navbar-expand-sm.bg-dark.fixed-top {
+    background-color: #24346a !important;
+}
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 24px;
+    padding-left: 24px;
+    font-size: 12px;
+}
+a.nav-link.btn-req {
+    border: 1px solid #b0bf40;
+    border-radius: 10px;
+    color: #fff;
+}
+.container-fluid.nav-bar-container {
+    margin-left: 0%;
+}
+
+.container-fluid.banner {
+    background-color: #24346a !important;
+    margin-top: 0px;
+    padding-top: 125px;
+}
+.container-fluid.banner1 {
+    background-color: #24346a !important;
+    margin-top: 40px;
+    padding-top: 80px;
+}
+.col-sm-6.banner-text {
+    padding-left: 10%;
+    padding-right: 5%;
+}
+.banner-text h2 {
+    font-size: 55px;
+    color: #fff;
+}
+.banner-text h2 b {
+    font-weight: 700;
+}
+b.ipsum {
+    color: #b0bf40;
+}
+.banner-text p {
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.4em;
+    display: inline-block;
+}
+.banner-img {
+    position: absolute;
+    top: -18px;
+    left: 67%;
+    z-index: 1;
+}
+ .lines-img {
+    position: absolute;
+    top: 40px;
+    left: 35px;
+    z-index: 2;
+}
+.industry p {
+    font-size: 12px;
+    color: #248d99;
+    font-weight: 700;
+    letter-spacing: 2px;
+	margin-bottom: 2rem;
+}
+.container.industry {
+    margin-top: 6%;
+}
+i.fas.fa-landmark {
+    font-size: 28px;
+    margin-right: 30px;
+}
+.industry-text h2 {
+    color: #a5406f;
+    font-size: 22px;
+}
+.col-sm-3.industry-text {
+    border-bottom: 2px solid #a5406f;
+}
+.industrytext h2 {
+    font-size: 22px;
+}
+.industrytext {
+    border-bottom: 2px solid #e1e9ee;
+    font-size: 22px;
+    max-width: 25%;
+}
+img.line-img3 {
+    position: absolute;
+    top: 168px;
+    left: 38%;
+    z-index: 1;
+}
+img.svs-img {
+    position: absolute;
+    margin-left: 10%;
+    margin-top: -82px;
+}
+img.line-img2 {
+    position: absolute;
+    margin-top: 35%;
+    margin-left: -22%;
+}
+img.line-w {
+    margin-left: 72%;
+}
+.text-above {
+    position: absolute;
+    margin-top: 46%;
+    margin-left: -5%;
+    width: 77%;
+}
+.btn-type {
+    display: flex;
+    padding-top: 20px;
+}
+.btn-type p {
+    font-size: 13px;
+    margin-left: 20px;
+    color: #248d99;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.text-above p {
+    font-size: 13px;
+    color: #248d99;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.industry1{
+    margin-top:6%;
+}
+.align-items-center {
+    -ms-flex-align: left !important;
+    align-items:left !important;
+}
+.justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: left !important;
+}
+.align-items-center {
+    -ms-flex-align: left!important;
+    align-items: left!important;
+}
+.col-sm-4.colo-1 h5 {
+    color: #fff;
+    font-size: 18px;
+}
+.bbb_viewed_title {
+    margin-bottom: 70px;
+    margin-top: 8px;
+    font-weight: 600;
+    font-size: 40px;
+}
+p.slider-text-f {
+    font-size: 12px !important;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0px;
+    padding-left: 0px;
+    margin-top: 15px;
+}
+.bbb_viewed_item.discount.d-flex.flex-column.slider-color {
+    background-color: #07808d;#a74170
+}
+.bbb_viewed_item.discount.d-flex.flex-column.slider-color2 {
+    background-color:#a74170;
+}
+.bbb_viewed_item.discount.d-flex.flex-column.slider-color3 {
+    background-color:#333a42;
+}
+
+p.slider-text {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0px;
+    padding-left: 18px;
+    margin-top: 15px;
+}
+p.slider-text-readmore {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 5px;
+    padding-left: 18px;
+    margin-top: 15px;
+}
+p.slider-text1 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0px;
+    padding-left: 18px;
+    margin-top: 15px;
+}
+.container-fluid.banner.footer {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.col-sm-2.colo-2 li {
+    color: #fff;
+    list-style: none;
+    font-weight: 300;
+	margin-bottom:10px;
+}
+
+.container-fluid.banner1.footer {
+    padding-left: 9%;
+    padding-right: 4%;
+}
+h5.get-strts {
+    color: #b0bf40 !important;
+}
+.col-sm-2.colo-2 h6 {
+    font-size: 18px;
+    color: #fff;
+}
+.contact-us i {
+    font-size: 22px !important;
+    color: #fff;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+li.phone {
+    margin-top: 35px;
+    margin-left: -29px;
+}
+.phone i {
+    font-size: 20px !important;
+    font-weight: 600;
+    margin-right: 14px;
+}
+.phone {
+    margin-top: 50px;
+    color: #fff;
+}
+.phone span {
+    font-size: 16px;
+}
+.phone1 {
+    margin-top: 50px;
+    color: #fff;
+	margin-left: -34px;
+}
+button.btn.btn-link {
+    border: 2px solid #b0bf40;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    padding: 5px 30px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+button.btn.btn-link:hover{
+   text-decoration:none;
+}
+button.btn.btn-link1 {
+    border: 1px solid #b0bf40;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    padding: 5px 12px;
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.contact-us {
+    margin-top: 26px;
+}
+.row.bootom-footer {
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+.footer-links {
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+}
+.footer-links a {
+    color: #fff;
+}
+.footer-links a:hover {
+    color: #fff;
+	text-decoration:none;
+}
+a.divides {
+    margin-right: 30px;
+}
+a.divides1 {
+    margin-left: 30px;
+}
+i.fa.fa-play.circle {
+    color: #fff;
+    background-color: #b0bf40;
+    padding: 10px;
+    border: 8px solid #45492e63;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-right: 25px;
+}
+.col-sm-4 h3 {
+    font-size: 35px;
+    font-weight: 700;
+}
+.col-sm-4 p {
+    font-size: 18px;
+}
+.col-sm-4.tagline {
+    margin-top: 7%;
+}
+.text-above p {
+    font-size: 11px;
+}
+.mentions {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.play-actions p:after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background: #444;
+    right: 43%;
+    top: 50%;
+    position: absolute;
+}
+.col-sm-6.banner-images1 {
+    display: none;
+}
+a.comapny-rigjht {
+    float: right;
+}
+@media (max-width: 600px){
+img.banner-img-ee {
+    margin-left: 56%;
+    height: 300px;
+}
+img.lines-imgee {
+    position: absolute;
+    margin-top: 18%;
+    width: 100%;
+}
+.banner-img {
+    position: initial;
+    top: 62px;
+    left: 36%;
+    z-index: 1;
+}
+.col-sm-6.banner-images {
+    margin-top: 46%;
+}
+.phone1 {
+    margin-top: 25px;
+    color: #fff;
+    margin-left: 0px;
+    margin-bottom: 50px;
+}
+.phone {
+    margin-top: 25px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.col-sm-4.colo-1 {
+    margin-bottom: 45px;
+}
+.container-fluid.nav-bar-container {
+    margin-left: 4%;
+}
+a.nav-link.btn-req {
+    border: 1px solid #b0bf40;
+    border-radius: 10px;
+    color: #fff;
+    width: 40%;
+    text-align: center;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.container-fluid.banner {
+    background-color: #24346a !important;
+    margin-top: 0px;
+    padding-top: 100px;
+}
+.container-fluid.banner {
+    overflow-x: hidden;
+}
+.lines-img {
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    width: 100%;
+    position: inherit;
+}
+img.line-img3 {
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    z-index: 1;
+    width: 38%;
+}
+img.svs-img {
+    position: absolute;
+    margin-left: 36%;
+    margin-top: -71%;
+    width: 60%;
+}
+img.line-img2 {
+    position: absolute;
+    margin-top: -43%;
+    margin-left: 22%;
+    width: 72%;
+}
+.industrytext {
+    border-bottom: 2px solid #e1e9ee;
+    font-size: 22px;
+    max-width: 100%;
+    margin-top: 10px;
+}
+img.line-w {
+    width: 65%;
+    margin-left: 42px;
+}
+.text-above {
+    position: absolute;
+    margin-top: -46%;
+    margin-left: 35%;
+    width: 57%;
+}
+.text-above p {
+    font-size: 12px;
+    color: #248d99;
+    font-weight: 700;
+    letter-spacing: 1px;
+   
+    margin-top: 28px;
+}
+.text-above h5 {
+    font-size: 16px;
+   
+}
+.btn-type {
+    display: flex;
+    padding-top: 0px;
+    margin-top: -10px;
+}
+.banner-text h2 {
+    font-size: 40px;
+    color: #fff;
+}
+.col-sm-6.banner-text {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.bg-dark {
+    padding-left: 0%;
+}
+.container-fluid.banner1 {
+    background-color: #24346a !important;
+    margin-top: 0px;
+    padding-top: 50px;
+}
+.container-fluid.banner1.footer {
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.col-sm-6.banner-images1 {
+    display: block;
+}
+.col-sm-6.banner-images {
+    display: none;
+}
+.industry1 {
+    margin-top: 15%;
+}
+a.comapny-rigjht {
+    float: left;
+}
+.col-sm-4.tagline {
+    margin-top: 10%;
+}
+
+
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top">
+        <div class="container-fluid nav-bar-container">
+          <a href="/" class="navbar-brand">
+             Logo
+          </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="" class="nav-link active">
+                   PLATFORM
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link active">
+                    SOLUTION
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link active">
+                    PARTNERS
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link active">
+                    COMPANY
+                </a>
+            </li>
+			<li class="nav-item">
+                <a href="" class="nav-link active">
+                   BLOG
+                </a>
+            </li>
+			<li class="nav-item">
+                <a href="" class="nav-link active">
+                    CAREER
+                </a>
+            </li>
+			<li class="nav-item">
+                <a href="" class="nav-link active">
+                    SIGN IN
+                </a>
+            </li>
+			<li class="nav-item">
+			     <button type="button" class="btn btn-link1">REQUEST DEMO</button> 
+			</li>
+        </ul>
+        </div>
+    </div>  
+</nav>
+
+
+<div class="container-fluid banner">
+  <div class="row">
+    <div class="col-sm-6 banner-text">
+		<h2><b>Quis <b class="ipsum">Ipsum</b> Cea</b></h2>
+		<h2>Lorem Ipsum</h2>
+		<p>Comany provides lenders, businesses with actionable credit intellignce on private entities they need to improve trust and increase their lending and tranding activity.</p>
+		<div class="play-action">
+		    <span class="banner-play">
+			   <i class="fa fa-play circle" style=""></i>
+			   <p>Watch <br>in Action</p>
+			</span>
+			 
+		 </div>
+	</div>
+ 
+	<div class="col-sm-6 banner-images">
+	   <div class="row">
+	   
+	         <img src="img/lines.png" class="banner-img" height="" width="" alt="Avatar">
+	      
+	        <img src="img/figma-banner.png" class="lines-img" height="" width="" alt="Avatar">
+	      </div>
+		   
+	  </div>
+	  <div class="col-sm-6 banner-images1">
+	   <div class="row">
+	         <img src="img/figma-banner.png" class="lines-imgee" height="" width="" alt="Avatar">
+	         <img src="img/lines.png" class="banner-img-ee" height="" width="" alt="Avatar">
+	      
+	        
+	      </div>
+		   
+	  </div>
+    </div>
+  </div>
+
+ <div class="container industry">
+    <p>INDUSTRIES</P>
+ </div>
+<div class="container ">
+   <div class="row">
+    <div class="col-sm-3 industry-text">
+	    <h2><a><i class='fas fa-landmark'></i>FEea elit quis</a></h2>
+	</div>
+	<div class="col-sm-3 industrytext">
+	   <h2>CEea elit quis</h2>
+	</div>
+	<div class="col-sm-3 industrytext">
+	   <h2>Eea elit quis</h2>
+	</div>
+	<div class="col-sm-3 industrytext">
+	   <h2>Eea elit quis</h2>
+	</div>
+  </div>
+ </div>
+
+
+
+<div class="container industry1">
+  
+  <div class="row">
+    <div class="col-sm-4" style="">
+	   <h3>Tagline Content Line <br> Goes here</h3>
+		<p>Comany provides lenders, businesses with actionable credit intellignce on private entities they need to improve trust and increase their lending and tranding activity.</p>
+		<div class="play-actions">
+		    
+			<p>View Solutions</p>
+			
+		 </div>
+	</div>
+    <div class="col-sm-4 tagline" style="">
+	   <img src="img/figma-lines.png" class="line-w" height="" width="" alt="Avatar">
+	   <img src="img/Illustration.png" class="line-img3" height="" width="" alt="Avatar">
+	   
+	</div>
+    <div class="col-sm-4 tagline" style="">
+	    <img src="img/ladyimg.png" class="svs-img" height="" width="" alt="Avatar">
+		<img src="img/Rectangle.png" class="line-img2" height="" width="" alt="Avatar">
+		<div class="text-above">
+			<p>Solutions name</p>
+			<h5>Case Study Line Goes Here. Can be two lines also</h5>
+            <div class="btn-type">
+				<p>Learn more</p>
+                <p>Watch videos</p>
+             </div>
+		</div>
+	</div>
+  </div>
+</div>
+
+
+<div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+<div class="bbb_viewed">
+    <div class="container-fluid mentions">
+	     <h3 class="bbb_viewed_title">Mentions</h3>
+        <div class="row">
+            <div class="col">
+                <div class="bbb_main_container">
+                    <div class="bbb_viewed_title_container">
+                        
+                        <div class="bbb_viewed_nav_container">
+                            <div class="bbb_viewed_nav bbb_viewed_prev"><i class="fas fa-arrow-left"></i></div>
+                            <div class="bbb_viewed_nav bbb_viewed_next"><i class="fas fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                    <div class="bbb_viewed_slider_container">
+                        <div class="owl-carousel owl-theme bbb_viewed_slider">
+                            <div class="owl-item">
+                                <div class="bbb_viewed_item discount d-flex flex-column slider-color">
+								    <img src="img/Rectangle.png" class="react-slide" height="" width="" alt="Avatar">
+                                    <p class="slider-text">Eea elit quis exercitation eulpaea elit quis exercitation culpaea elit quis exercitation culpaea</p>
+									<p class="slider-text-readmore">Read more</p>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                               <div class="bbb_viewed_item discount d-flex flex-column slider-color2">
+								    <img src="img/Rectangle.png" class="react-slide" height="" width="" alt="Avatar">
+                                    <p class="slider-text">Eea elit quis exercitation eulpaea elit quis exercitation culpaea elit quis exercitation culpaea</p>
+									<p class="slider-text-readmore">Read more</p>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="bbb_viewed_item discount d-flex flex-column  slider-color">
+								    <img src="img/Rectangle.png" class="react-slide" height="" width="" alt="Avatar">
+                                    <p class="slider-text">Eea elit quis exercitation eulpaea elit quis exercitation culpaea elit quis exercitation culpaea</p>
+									<p class="slider-text-readmore">Read more</p>
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="bbb_viewed_item discount d-flex flex-column slider-color3">
+								    <img src="img/Rectangle.png" class="react-slide" height="" width="" alt="Avatar">
+                                    <p class="slider-text">Eea elit quis exercitation eulpaea elit quis exercitation culpaea elit quis exercitation culpaea</p>
+									<p class="slider-text-readmore">Read more</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="container-fluid banner1 footer">
+   <div class="row">
+    <div class="col-sm-4 colo-1 ">
+	   <h5>ea elit quis aute nulla sit exercitation</h5>
+	   <p class="slider-text-f">Eea elit quis exercitation eulpaea elit quis exercitation culpaea elit quis exercitation culpaea
+	   Eea elit quis exercitation eulpaea elit quis exercitation culpaea elit quis exercitation culpaea
+	   Eea elit quis exercitation eulpaea elit quis exercitation culpaea quis exercitation eulpaea elit 
+	   quis exercitation culpaea elit quis exercitation culpaea quis exercitation culpaea.</p>
+	   <h5 class="get-strts">Get Started</h5>
+	</div>
+	<div class="col-sm-2 colo-2">
+	    <ul>
+           <li>Investors</li>
+           <li>News</li>
+           <li>Blogs</li>
+           <li>Case Study</li>
+		    
+        </ul>
+		<div class="phone">
+		    <h6>Sales Support</h6>
+		</div>
+	</div>
+	<div class="col-sm-2 colo-2">
+	    <ul>
+          <li>Team</li>
+          <li>Pricing</li>
+          <li>Support</li>
+          <li>Product Portfolio</li>
+		  
+        </ul>
+		<div class="phone phone1">
+             <span><i class="fa fa-phone" style="font-size:18px"></i>1234512345</span> 		   
+		</div>
+	</div>
+	<div class="col-sm-2 colo-2">
+	   <ul>
+         <li>Compliance</li>
+         <li>security</li>
+         <li>Support</li>
+         <li>Contact us</li>
+       </ul>
+	   <div class="phone phone1">
+		   <span><i class="fa fa-envelope" style="font-size:18px"></i>support@company.in</span> 
+		</div>
+	</div>
+	<div class="col-sm-2 colo-2">
+	   <h6>existing Users</h6>
+	   		 <button type="button" class="btn btn-link">LOGIN</button>
+		 
+		<div class="contact-us">
+		    <h6>Contact with us</h6>
+            <i class='fab fa-facebook-f' style='font-size:36px'></i>
+		    <i class='fab fa-twitter' style='font-size:36px'></i>
+		    <i class='fab fa-linkedin-in' style='font-size:36px'></i>
+		   
+		</div>
+	</div>
+  </div>
+    <div class="row bootom-footer">
+        <div class="col-sm-12 footer-links">
+	        <div>
+			    <p><a href="" class="divides">Terms of service</a>|<a href="" class="divides1">Privacy Notice </a><a href="" class="comapny-rigjht" >2021 Company.  All rights reserved.</a></p>
+			</div>
+        </div>
+    </div>
+</div>
+<script>
+ $(document).ready(function()
+{
+
+
+if($('.bbb_viewed_slider').length)
+{
+var viewedSlider = $('.bbb_viewed_slider');
+
+viewedSlider.owlCarousel(
+{
+loop:true,
+margin:30,
+autoplay:true,
+autoplayTimeout:6000,
+nav:false,
+dots:false,
+responsive:
+{
+0:{items:1},
+575:{items:2},
+768:{items:3},
+991:{items:4},
+1199:{items:4}
+}
+});
+
+if($('.bbb_viewed_prev').length)
+{
+var prev = $('.bbb_viewed_prev');
+prev.on('click', function()
+{
+viewedSlider.trigger('prev.owl.carousel');
+});
+}
+
+if($('.bbb_viewed_next').length)
+{
+var next = $('.bbb_viewed_next');
+next.on('click', function()
+{
+viewedSlider.trigger('next.owl.carousel');
+});
+}
+}
+
+
+});
+</script>
+</body>
+</html>
